@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ventura Odontologia - Especialista em lentes de porcelana e implantes em Belo Horizonte. Agende sua consulta.">
+    <title>Ventura Odontologia | Estética Bucal Avançada</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            primary: '#9c666a', // Rosa Antigo
+                            dark: '#2d2a28',    // Cinza Profundo
+                            light: '#fdfbfb'    // Off-white
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; scroll-behavior: smooth; }
+        .hero-gradient { background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); }
+    </style>
+</head>
+<body class="bg-brand-light text-brand-dark antialiased">
+
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
+        <nav class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center" aria-label="Navegação Principal">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl font-bold tracking-tighter text-brand-primary">VENTURA</span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm tracking-wide">
+                <a href="#tratamentos" class="hover:text-brand-primary transition">Tratamentos</a>
+                <a href="#galeria" class="hover:text-brand-primary transition">Galeria</a>
+                <a href="#contato" class="bg-brand-primary text-white px-6 py-2.5 rounded-full hover:shadow-lg transition transform hover:-translate-y-0.5">
+                    Agendar Agora
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-gradient py-20 md:py-32">
+            <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="inline-block px-4 py-1.5 bg-brand-primary/10 text-brand-primary rounded-full text-xs font-bold uppercase tracking-widest mb-6">
+                        Tecnologia & Arte
+                    </span>
+                    <h1 class="text-4xl md:text-6xl font-extrabold leading-[1.1] mb-6">
+                        O sorriso que você sempre <span class="text-brand-primary font-serif italic text-5xl md:text-7xl">sonhou.</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-10 leading-relaxed max-w-lg">
+                        Especialistas em transformar vidas através de uma odontologia moderna, indolor e personalizada.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#tratamentos" class="bg-brand-dark text-white px-8 py-4 rounded-xl font-bold hover:bg-black transition shadow-xl">
+                            Ver Tratamentos
+                        </a>
+                        <div class="flex items-center gap-3 px-4">
+                            <div class="flex -space-x-2">
+                                <div class="w-8 h-8 rounded-full bg-gray-300 border-2 border-white"></div>
+                                <div class="w-8 h-8 rounded-full bg-gray-400 border-2 border-white"></div>
+                            </div>
+                            <span class="text-sm font-medium text-gray-500 font-bold">+500 Sorrisos</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-brand-primary/10 rounded-full blur-3xl"></div>
+                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80" 
+                         alt="Paciente sorrindo" 
+                         class="relative rounded-3xl shadow-2xl object-cover w-full h-[400px]">
+                </div>
+            </div>
+        </section>
+
+        <section id="tratamentos" class="py-24 bg-[#fdfbfb]">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="text-brand-primary font-bold uppercase tracking-[0.3em] text-[10px]">Excelência em cada detalhe</span>
+                    <h2 class="text-3xl md:text-5xl font-serif italic text-brand-dark mt-4">Tratamentos que Realizamos</h2>
+                    <div class="w-16 h-1 bg-brand-primary mx-auto rounded-full mt-6 opacity-40"></div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                    
+                    <div class="bg-white p-6 rounded-[2.5rem] shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-500 group hover:-translate-y-2 text-center">
+                        <div class="aspect-square mb-6 overflow-hidden rounded-3xl bg-[#f9f9f7] flex items-center justify-center">
+                            <img src="img/ortodontia.webp" alt="Ortodontia" class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <h3 class="text-lg font-bold text-brand-dark mb-2">1. Ortodontia</h3>
+                        <p class="text-gray-500 text-xs leading-relaxed">Alinhamento preciso e estético com tecnologia avançada.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-[2.5rem] shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-500 group hover:-translate-y-2 text-center">
+                        <div class="aspect-square mb-6 overflow-hidden rounded-3xl bg-[#f9f9f7] flex items-center justify-center">
+                            <img src="img/prevencao.webp" alt="Prevenção" class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <h3 class="text-lg font-bold text-brand-dark mb-2">2. Prevenção</h3>
+                        <p class="text-gray-500 text-xs leading-relaxed">Proteção e higiene essencial para manter seu sorriso protegido.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-[2.5rem] shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-500 group hover:-translate-y-2 text-center">
+                        <div class="aspect-square mb-6 overflow-hidden rounded-3xl bg-[#f9f9f7] flex items-center justify-center">
+                            <img src="img/kids.webp" alt="Kids" class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <h3 class="text-lg font-bold text-brand-dark mb-2">3. Kids</h3>
+                        <p class="text-gray-500 text-xs leading-relaxed">Ambiente acolhedor e divertido para os primeiros sorrisos.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-[2.5rem] shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-500 group hover:-translate-y-2 text-center">
+                        <div class="aspect-square mb-6 overflow-hidden rounded-3xl bg-[#f9f9f7] flex items-center justify-center">
+                            <img src="img/canal.webp" alt="Canal" class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <h3 class="text-lg font-bold text-brand-dark mb-2">4. Canal</h3>
+                        <p class="text-gray-500 text-xs leading-relaxed">Tratamento preciso e indolor para sua saúde bucal.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-[2.5rem] shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-500 group hover:-translate-y-2 text-center">
+                        <div class="aspect-square mb-6 overflow-hidden rounded-3xl bg-[#f9f9f7] flex items-center justify-center">
+                            <img src="img/implante.webp" alt="Implante" class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <h3 class="text-lg font-bold text-brand-dark mb-2">5. Implante</h3>
+                        <p class="text-gray-500 text-xs leading-relaxed">Solução duradoura para substituição de dentes perdidos.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-[2.5rem] shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-500 group hover:-translate-y-2 text-center">
+                        <div class="aspect-square mb-6 overflow-hidden rounded-3xl bg-[#f9f9f7] flex items-center justify-center">
+                            <img src="img/clareamento.webp" alt="Clareamento" class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <h3 class="text-lg font-bold text-brand-dark mb-2">6. Clareamento</h3>
+                        <p class="text-gray-500 text-xs leading-relaxed">Realce sua beleza natural com um sorriso radiante.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-[2.5rem] shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-500 group hover:-translate-y-2 text-center">
+                        <div class="aspect-square mb-6 overflow-hidden rounded-3xl bg-[#f9f9f7] flex items-center justify-center">
+                            <img src="img/protese.webp" alt="Prótese" class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <h3 class="text-lg font-bold text-brand-dark mb-2">7. Prótese</h3>
+                        <p class="text-gray-500 text-xs leading-relaxed">Recuperando função e estética com total conforto.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-[2.5rem] shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-500 group hover:-translate-y-2 text-center">
+                        <div class="aspect-square mb-6 overflow-hidden rounded-3xl bg-[#f9f9f7] flex items-center justify-center">
+                            <img src="img/restauracao.webp" alt="Restauração" class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <h3 class="text-lg font-bold text-brand-dark mb-2">8. Restauração</h3>
+                        <p class="text-gray-500 text-xs leading-relaxed">Restaurações invisíveis com alta durabilidade.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="py-24 bg-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-5xl font-serif italic text-brand-dark mb-4">Galeria de Transformações</h2>
+                    <p class="text-gray-500 uppercase tracking-[0.2em] text-xs font-bold">Passe o mouse (ou toque) para ver o resultado</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="group relative overflow-hidden rounded-[2rem] aspect-[4/3] shadow-2xl cursor-crosshair">
+                        <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=800&q=80" alt="Depois" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 w-full h-full transition-all duration-700 ease-in-out group-hover:opacity-0 group-hover:scale-110">
+                            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80" alt="Antes" class="w-full h-full object-cover grayscale">
+                            <div class="absolute top-6 left-6 bg-brand-dark/80 text-white text-[10px] font-bold px-4 py-2 rounded-full uppercase tracking-widest backdrop-blur-md">Antes</div>
+                        </div>
+                        <div class="absolute bottom-6 right-6 bg-brand-primary text-white text-[10px] font-bold px-4 py-2 rounded-full uppercase tracking-widest shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500">Resultado Final</div>
+                    </div>
+
+                    <div class="group relative overflow-hidden rounded-[2rem] aspect-[4/3] shadow-2xl cursor-crosshair">
+                        <img src="https://images.unsplash.com/photo-1594412640913-9420956985b4?auto=format&fit=crop&w=800&q=80" alt="Depois" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 w-full h-full transition-all duration-700 ease-in-out group-hover:opacity-0 group-hover:scale-110">
+                            <img src="https://images.unsplash.com/photo-1594412610537-83b63299723a?auto=format&fit=crop&w=800&q=80" alt="Antes" class="w-full h-full object-cover grayscale">
+                            <div class="absolute top-6 left-6 bg-brand-dark/80 text-white text-[10px] font-bold px-4 py-2 rounded-full uppercase tracking-widest backdrop-blur-md">Antes</div>
+                        </div>
+                        <div class="absolute bottom-6 right-6 bg-brand-primary text-white text-[10px] font-bold px-4 py-2 rounded-full uppercase tracking-widest shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500">Resultado Final</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="py-24 bg-white relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="bg-white/40 backdrop-blur-xl rounded-[3rem] shadow-[0_32px_64px_-15px_rgba(0,0,0,0.1)] overflow-hidden flex flex-col md:flex-row border border-white/20">
+                    <div class="md:w-5/12 bg-brand-dark p-12 md:p-16 text-white flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-4xl md:text-5xl font-serif italic mb-6 leading-tight">O próximo passo para sua melhor <span class="text-brand-primary font-sans not-italic font-bold">versão.</span></h2>
+                            <p class="text-gray-400 mb-8 leading-relaxed">Não é apenas um tratamento, é uma experiência de cuidado focada na sua singularidade.</p>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4 group">
+                                <div class="w-10 h-10 rounded-full bg-brand-primary/20 flex items-center justify-center text-brand-primary">✦</div>
+                                <span class="text-sm font-medium tracking-wide">Tecnologia Digital 3D</span>
+                            </div>
+                            <div class="flex items-center gap-4 group">
+                                <div class="w-10 h-10 rounded-full bg-brand-primary/20 flex items-center justify-center text-brand-primary">✦</div>
+                                <span class="text-sm font-medium tracking-wide">Design de Sorriso Personalizado</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="md:w-7/12 p-12 md:p-16">
+                        <form id="formLead" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="md:col-span-2">
+                                <label class="block text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400 mb-2">Experiência Desejada</label>
+                                <select name="interesse" class="w-full px-6 py-4 bg-gray-50 border-0 rounded-2xl focus:ring-2 focus:ring-brand-primary text-sm">
+                                    <option value="lentes">Lentes de Contato de Porcelana</option>
+                                    <option value="implantes">Implantes e Reabilitação</option>
+                                    <option value="estetica">Harmonização e Estética</option>
+                                </select>
+                            </div>
+                            <div class="relative">
+                                <input type="text" id="nome" name="nome" placeholder="Seu Nome" class="w-full px-6 py-4 bg-gray-50 border-0 rounded-2xl focus:ring-2 focus:ring-brand-primary text-sm">
+                                <span id="error-nome" class="hidden text-[10px] text-red-500 mt-1 ml-2 font-bold uppercase">Nome é necessário</span>
+                            </div>
+                            <div class="relative">
+                                <input type="tel" id="telefone" name="telefone" placeholder="WhatsApp (DDD)" class="w-full px-6 py-4 bg-gray-50 border-0 rounded-2xl focus:ring-2 focus:ring-brand-primary text-sm">
+                                <span id="error-tel" class="hidden text-[10px] text-red-500 mt-1 ml-2 font-bold uppercase">Telefone Inválido</span>
+                            </div>
+                            <div class="md:col-span-2 mt-4">
+                                <button type="submit" class="w-full bg-brand-primary text-white font-bold py-5 rounded-2xl shadow-lg hover:-translate-y-1 transition-all flex items-center justify-center gap-3">
+                                    RESERVAR MINHA AVALIAÇÃO <span>→</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brand-dark py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-brand-primary flex items-center justify-center rounded-lg text-white font-serif italic text-xl">V</div>
+                <span class="text-white font-bold tracking-tighter text-lg uppercase">Ventura Odontologia</span>
+            </div>
+            <div class="flex flex-col items-center md:items-end gap-2">
+                <p class="text-gray-500 text-[10px] uppercase tracking-[0.2em]">&copy; 2026 Todos os direitos reservados.</p>
+                <p class="text-gray-400 text-[10px] uppercase tracking-[0.3em] font-bold">Desenvolvido por <span class="text-white">CeliDigital</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5531999999999" target="_blank" class="fixed bottom-8 right-8 z-[9999] flex items-center justify-center w-16 h-16 bg-[#25D366] text-white rounded-full shadow-2xl hover:scale-110 transition-all group">
+        <span class="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-20"></span>
+        <svg class="w-8 h-8 relative z-10" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <script>
+        const form = document.getElementById('formLead');
+        const inputTel = document.getElementById('telefone');
+
+        inputTel.addEventListener('input', (e) => {
+            let x = e.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,5})(\d{0,4})/);
+            e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+        });
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const nome = document.getElementById('nome');
+            const tel = document.getElementById('telefone');
+            let isValid = true;
+
+            if (nome.value.length < 3) {
+                document.getElementById('error-nome').classList.remove('hidden');
+                isValid = false;
+            } else {
+                document.getElementById('error-nome').classList.add('hidden');
+            }
+
+            if (tel.value.length < 14) {
+                document.getElementById('error-tel').classList.remove('hidden');
+                isValid = false;
+            } else {
+                document.getElementById('error-tel').classList.add('hidden');
+            }
+
+            if (isValid) {
+                const btn = form.querySelector('button');
+                btn.innerHTML = "ENVIANDO... ✨";
+                btn.disabled = true;
+                setTimeout(() => {
+                    alert('Obrigado! A equipe entrará em contato em breve.');
+                    form.reset();
+                    btn.innerHTML = "RESERVAR MINHA AVALIAÇÃO →";
+                    btn.disabled = false;
+                }, 1500);
+            }
+        });
+    </script>
+</body>
+</html>

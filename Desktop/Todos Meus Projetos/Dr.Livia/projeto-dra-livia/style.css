@@ -1,0 +1,49 @@
+/* Definição das Cores de Odontologia */
+:root {
+  --primary-blue: #0077b6;      /* Azul Profissional (Confiança) */
+  --light-blue: #e0f2f7;        /* Azul Suave (Fundo de Seções) */
+  --accent-color: #00b4d8;      /* Cor de Destaque (Botões/Links) */
+  --pure-white: #ffffff;        /* Limpeza e Higiene */
+  --text-main: #2b2d42;         /* Texto Escuro (Leitura fácil) */
+  --text-muted: #6c757d;        /* Cinza para textos secundários */
+  --success-green: #2ecc71;     /* Para o botão de WhatsApp/Agendamento */
+}
+
+/* Aplicação Sugerida */
+body {
+  background-color: var(--pure-white);
+  color: var(--text-main);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background-color: var(--primary-blue);
+  color: var(--pure-white);
+  padding: 20px;
+}
+
+.hero-section {
+  background-color: var(--light-blue); /* Seção de destaque com fundo suave */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.btn-agendar {
+  background-color: var(--success-green); /* Verde chama mais atenção para ação */
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-agendar:hover {
+  background-color: #27ae60;
+}
+
+footer {
+  background-color: var(--text-main);
+  color: var(--pure-white);
+  padding: 40px 0;
+}
